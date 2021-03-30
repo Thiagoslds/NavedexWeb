@@ -8,21 +8,21 @@ import { useCallback, useContext } from 'react';
 import {AuthContext} from '../../hooks/AuthContext';
 import { useFormik } from 'formik';
 
-interface SignInFormData {
+interface SignUpFormData {
   email: string,
   password: string
 }
 
-const SignIn: React.FC = () => {
-  const {signIn} = useContext(AuthContext);
+const SignUp: React.FC = () => {
+  const {signUp} = useContext(AuthContext);
 
-  const handleSubmitDatas = useCallback(async (data: SignInFormData) => {
-      await signIn({
+  const handleSubmitDatas = useCallback(async (data: SignUpFormData) => {
+      await signUp({
         email: data.email,
         password: data.password
       })
     
-    }, [signIn]
+    }, [signUp]
   );
 
   const formik = useFormik({
@@ -35,7 +35,7 @@ const SignIn: React.FC = () => {
       <Content>
         <TextContent>
           <p className="show-welcome">WELCOME TO</p>
-          <h1>NAVEDEX</h1>
+          <h1>SIGNUPPPPPPPP</h1>
           <p className="show-enterData">Entre com seu usuário e senha para acessar nossa plataforma!</p>
         </TextContent>
 
@@ -68,4 +68,4 @@ const SignIn: React.FC = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
