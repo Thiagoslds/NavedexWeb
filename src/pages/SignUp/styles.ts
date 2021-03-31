@@ -65,13 +65,3 @@ export const Foot = styled.div `
       color: blueviolet;
     }
 `;
-export const Icons = styled.div ` 
-    display: flex;
-    justify-content: center;
-    img {
-			width: 50px;
-			height: 50px;
-			margin: 10px 20px;
-    }
-`;
-

@@ -48,7 +48,7 @@ const SignIn: React.FC = () => {
           </form>
 
         <Foot>
-          <p>Não possui uma conta? <a href="google.com">Crie uma conta</a> </p>
+          <p>Não possui uma conta? <a href="/user/signup">Crie uma conta</a> </p>
           <p className="light-text">Ou</p>
           <p className="light-text">Entre com alguma rede social</p>
         </Foot>
